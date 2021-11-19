@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="myFont">
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
       <home />
@@ -17,7 +17,7 @@
         fixed
         bottom
         right
-        color="secondary"
+        color="orangebni"
         @click="toTop"
       >
         <v-icon>mdi-arrow-up</v-icon>
@@ -29,7 +29,7 @@
 
 <style scoped>
 .v-main {
-  background-image: url("~@/assets/img/bgMain.png");
+  background-image: url("~@/assets/img/gedungbni.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -75,7 +75,7 @@ export default {
   watch: {
     fab(value) {
       if (value) {
-        this.color = "secondary";
+        this.color = "orangebni";
         this.flat = false;
       } else {
         this.color = "transparent";
@@ -96,3 +96,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.myFont {
+  font-family: "Poppins", cursive;
+}
+</style>
